@@ -98,7 +98,6 @@ nav > ul > li > a:hover{
 
 .hero {
   background-color: #333333be; 
-
   color: #fff;
   text-align: center;
   padding: 100px 0;
@@ -119,12 +118,12 @@ flex-flow: column;
 align-items: center;
 justify-content: center;
 }
-div.inicio > h2{
+.hero > div.inicio > h2{
   font-family: 'azonix';
   font-size: 2.5em;
   margin-bottom: 10px;
 }
-div.inicio > p{
+.hero > div.inicio > p{
   font-family: 'made';
   margin-top: 10px;
 }
@@ -251,8 +250,6 @@ div.gallery {
     box-shadow: inset 0px 0px 20px 7px rgba(0, 0, 0, 0.603);
   }
 
- 
-
 .gallery > .pic > img{
     display: flex;
     width: 250px;
@@ -276,24 +273,45 @@ img:hover {
   transform: scale(1.8);
 }
 
-.tour-dates {
+.tour-dates{
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #333333d8;
   color: #fff;
   height: 100vh;
   width: 100vw;
 }
 
-.tour-dates > .container{
-  border:  1px solid black;
-  width: fit-content;
-  height: 90vh;
+.tour-dates > .container5{
+font-family: 'regular';
+font-size: 2em;
+
+border:  1px solid black;
+height: 50vh;
+width: 50vw;
+padding: 20px;
+
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+
+
+.tour-dates > .container5 > ul > li, p{
+  font-size: 20px;
+  font-family: 'Courier New', Courier, monospace;
+  list-style-type: none;
+
+}
+.tour-dates > h3,p{
+  padding: 20px;
+ 
   display: flex;
-  flex-flow: row wrap;
   justify-content: center;
   align-items: center;
-
-  
-
+  align-self: flex-end;
 }
 
 footer {
@@ -303,7 +321,7 @@ footer {
   padding: 20px 0;
 }
 
-footer > .container > p {
+footer > .container6 > p {
   font-family: "personal";
   font-size: 1.5em;
   text-decoration: underline;
